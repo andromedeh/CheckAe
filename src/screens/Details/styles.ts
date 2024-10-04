@@ -61,7 +61,14 @@ export const DescriptionContainer = styled.View`
 `;
 
 export const Text = styled.Text` 
-    padding-left: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px;
+    color: #000000;
+`;
+
+export const TextStatus = styled.Text` 
+    padding-left: 25%;
     font-size: 14px;
     color: #000000;
 `;

@@ -28,9 +28,9 @@ export const InputContainer = styled.View`
     background-color: #fff;
     padding: 6px;
     border-radius: 20px;
-    margin-bottom: 20px;
     width: 100%;
     height: 45px;
+    margin-bottom: 20px;
     
 `;
 
@@ -39,9 +39,9 @@ export const DescriptionContainer = styled.View`
     background-color: #fff;
     padding: 6px;
     border-radius: 20px;
-    margin-bottom: 20px;
     width: 100%;
     height: 100px;
+    margin-bottom: 20px;
 `;
 
 export const Input = styled.TextInput`
@@ -62,8 +62,7 @@ padding-left: 225px;
 `;
 
 export const TextGoBack = styled.Text` 
-    font-size: 14px;
-    color: #000000;
+    
 `;
 
 export const GoBackButton = styled.TouchableOpacity`
@@ -71,4 +70,11 @@ export const GoBackButton = styled.TouchableOpacity`
     justify-content: start;
     align-items: center;
     justify-content: first baseline;
+`;
+
+export const TextValidation = styled.Text` 
+font-size: 14px;
+color: #FF8477;
+padding-left: 6px;
+margin-top: -30px;
 `;
