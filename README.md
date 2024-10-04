@@ -1,50 +1,56 @@
-# Welcome to your Expo app 👋
+# 📋 Task Manager - App Lista de Tarefas
+Seja bem-vindo(a) ao Task Manager! Este projeto de aplicativo para lista de tarefas foi desenvolvido como atividade prática da trilha de Desenvolvimento Mobile da RESTIC36. O foco do projeto é praticidade e simplicidade, usando as melhores tecnologias para garantir uma ótima experiência mobile. 
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 🚀 Visão Geral
+O Task Manager foi desenvolvido para ajudá-lo(a) a organizar suas tarefas diárias de maneira eficiente. Com ele, você pode adicionar e remover tarefas, além de marcar aquelas que já foram concluídas. O objetivo dos desenvolvedores é aplicar todos os conhecimentos adquiridos no estudo introdutório de desenvolvimento mobile. Dessa forma, o projeto conta diversos mecanismos e tecnologias aplicadas que vão desde o desing da interface até a validação de dados: 
+- Criação de protótipo no Figma;
+- Implementação de aplicativo através do React Native e Expo;
+- Criação e estilização de componentes com Styled-Components;
+- Utilização de hooks, props, navegação e contexto;
+- Armazenamento local com AsyncStorage;
+- Validação de formulários com Formik e Yup;
 
-## Get started
+Para acessar nosso protótipo de interface, clique [aqui!](https://www.figma.com/design/j1o0oZpC8tPy8jPxu6TnXy/Lista-de-Tarefas---Andreina?node-id=0-1&t=lKGL6T6oB4nzuRA9-1)
 
-1. Install dependencies
+## 🛠️ Ferramentas e Linguagens
+Este projeto conta com seguintes tecnologias:
 
-   ```bash
-   npm install
-   ```
+![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
+![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37) 
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) 
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
-2. Start the app
+## 🎯 Funcionalidades
+- Adicionar novas tarefas com facilidade.
+- Marcar tarefas como concluídas.
+- Remover tarefas existentes.
+- Interface simples e intuitiva, adaptada para dispositivos móveis.
 
-   ```bash
-    npx expo start
-   ```
+## 🧩 Pré-requisitos
+Antes de começar, você vai precisar ter instalado em sua máquina:
 
-In the output, you'll find options to open the app in a
+- Node.js 
+- Expo CLI e dependências 
+- Yarn
+- Emulador Android/iOS ou Expo Go (emular diretamente pelo celular)
+- Bibliotecas: Styled-components, Navigation, AsyncStorage, Formik e Yup
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🔗 Links Úteis
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Aqui estão alguns links que podem te ajudar durante o desenvolvimento:
 
-## Get a fresh project
+- [React Native](https://reactnative.dev/docs/getting-started)
+- [Node.js](https://nodejs.org/en/)
+- [Expo](https://docs.expo.dev/tutorial/create-your-first-app/)
+- [Expo Go](https://expo.dev/go)
+- [AsyncStorage](https://react-native-async-storage.github.io/async-storage/docs/install)
+- [Formik](https://formik.org/docs/guides/react-native)
+- [Yup](https://github.com/jquense/yup)
 
-When you're ready, run:
+## 🧑‍💻 Equipe
 
-```bash
-npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+>>>>>>> 9ee76ad10a082806e1406b8395c439cb3d236c3d

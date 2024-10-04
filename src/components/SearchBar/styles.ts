@@ -1,6 +1,5 @@
 import styled from 'styled-components/native';
 
-
 export const Container = styled.View`
   flex-direction: row;
   align-items: center;
@@ -9,8 +8,6 @@ export const Container = styled.View`
   border-radius: 20px;
   margin-bottom: 20px;
   width: 100%;
-  
-  
 `;
 
 export const SearchInput = styled.TextInput`
