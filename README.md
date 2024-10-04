@@ -34,7 +34,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 - Expo CLI e dependências 
 - Yarn
 - Emulador Android/iOS ou Expo Go (emular diretamente pelo celular)
-- Bibliotecas: Styled-components, Navigation, AsyncStorage, Formik e Yup
+- Bibliotecas: Styled-components, Navigation, AsyncStorage, DateTimePicker, Formik e Yup
 
 ## 🔗 Links Úteis
 
