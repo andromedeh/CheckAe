@@ -5,7 +5,7 @@ import { useNavigation } from "@react-navigation/native";
 import { useContext } from "react";
 import { TaskContext } from "../../context/TaskContext";
 import { Header } from '@/src/components/Header';
-import { ContainerInformacoes, Container, ContainerStatus, GoBackButton, TextGoBack, DetailContainer, Text, TaskCheck, DescriptionContainer, TitleContainer } from './styles';
+import { TextStatus, ContainerInformacoes, Container, ContainerStatus, GoBackButton, TextGoBack, DetailContainer, Text, TaskCheck, DescriptionContainer, TitleContainer } from './styles';
 import { DeleteTaskButton } from '@/src/components/DeleteTaskButton';
 import { Alert } from 'react-native';
 import { TaskProps } from '@/src/utils/types';
@@ -54,9 +54,9 @@ export default function Details({ route }: any, props: TaskProps) {
               />
             </TaskCheck>
           </ContainerStatus>
-          <Text>
+          <TextStatus>
             {task.status ? 'Tarefa concluída!' : 'Tarefa pendente!'}
-          </Text>
+          </TextStatus>
         </DetailContainer>
         <TitleContainer>Nome:</TitleContainer>
         <DetailContainer>
