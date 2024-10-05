@@ -1,8 +1,8 @@
-# 📋 Task Manager - App Lista de Tarefas
-Seja bem-vindo(a) ao Task Manager! Este projeto de aplicativo para lista de tarefas foi desenvolvido como atividade prática da trilha de Desenvolvimento Mobile da RESTIC36. O foco do projeto é praticidade e simplicidade, usando as melhores tecnologias para garantir uma ótima experiência mobile. 
+# 📋 CheckAê - App Lista de Tarefas
+Seja bem-vindo(a) ao CheckAê! Este projeto de aplicativo para lista de tarefas foi desenvolvido como atividade prática da trilha de Desenvolvimento Mobile da RESTIC36. O foco do projeto é praticidade e simplicidade, usando as melhores tecnologias para garantir uma ótima experiência mobile. 
 
 ## 🚀 Visão Geral
-O Task Manager foi desenvolvido para ajudá-lo(a) a organizar suas tarefas diárias de maneira eficiente. Com ele, você pode adicionar e remover tarefas, além de marcar aquelas que já foram concluídas. O objetivo dos desenvolvedores é aplicar todos os conhecimentos adquiridos no estudo introdutório de desenvolvimento mobile. Dessa forma, o projeto conta diversos mecanismos e tecnologias aplicadas que vão desde o desing da interface até a validação de dados: 
+O CheckAê foi desenvolvido para ajudá-lo(a) a organizar suas tarefas diárias de maneira eficiente. Com ele, você pode adicionar e remover tarefas, atualizar o status das tarefas existentes e muito mais! O objetivo dos desenvolvedores é aplicar todos os conhecimentos adquiridos no estudo introdutório de desenvolvimento mobile. Dessa forma, o projeto conta diversos mecanismos e tecnologias aplicadas que vão desde o desing da interface até a validação de dados: 
 - Criação de protótipo no Figma;
 - Implementação de aplicativo através do React Native e Expo;
 - Criação e estilização de componentes com Styled-Components;
@@ -22,9 +22,12 @@ Este projeto conta com seguintes tecnologias:
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 ## 🎯 Funcionalidades
-- Adicionar novas tarefas com facilidade.
-- Marcar tarefas como concluídas.
-- Remover tarefas existentes.
+- Adicionar novas tarefas com facilidade;
+- Marcar tarefas como concluídas;
+- Remover tarefas existentes;
+- Expandir detalhes de tarefas específicas!
+- Filtrar visualização de tarefas;
+- Pesquisar por tarefas;
 - Interface simples e intuitiva, adaptada para dispositivos móveis.
 
 ## 🧩 Pré-requisitos
@@ -34,23 +37,30 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 - Expo CLI e dependências 
 - Yarn
 - Emulador Android/iOS ou Expo Go (emular diretamente pelo celular)
-- Bibliotecas: Styled-components, Navigation, AsyncStorage, DateTimePicker, Formik e Yup
+- Bibliotecas: Styled-components, Navigation, AsyncStorage, DateTimePicker, DateTimePicker, Formik e Yup
+
+## ⚙️ Como rodar o projeto
+
+Com os pré-requisitos instalados, basta clonar o repositório do Github em sua máquina, descompactar o arquivo e abrir a pasta no editor de código de sua preferência. Depois de instalar as dependências do projeto, o último passo é utilizar, no terminal do editor e na pasta do aplicativo, o comando npx expo start para dar início ao APP, selecionando a forma que deseja abrir o aplicativo (emulador, celular, etc).
 
 ## 🔗 Links Úteis
 
-Aqui estão alguns links que podem te ajudar durante o desenvolvimento:
+Aqui estão alguns links que podem te ajudar durante a utilização e estudos:
 
 - [React Native](https://reactnative.dev/docs/getting-started)
 - [Node.js](https://nodejs.org/en/)
 - [Expo](https://docs.expo.dev/tutorial/create-your-first-app/)
 - [Expo Go](https://expo.dev/go)
 - [AsyncStorage](https://react-native-async-storage.github.io/async-storage/docs/install)
+- [DateTimePicker](https://docs.expo.dev/versions/latest/sdk/date-time-picker/)
 - [Formik](https://formik.org/docs/guides/react-native)
 - [Yup](https://github.com/jquense/yup)
 
 ## 🧑‍💻 Equipe
 
+- Ana Carolina Souza Sampaio
+- Andreina Novaes Silva Melo (eu 😄)
+- [Estêvão Viana Queiroz](https://github.com/Txtravos)
+- [João Vitor Cangussu Bernardes Oliveira](https://github.com/jvcangussu)
+- [Thiago Fernandes Pereira de Sousa](https://github.com/ThiagoFPSousa)
 
-
-
->>>>>>> 9ee76ad10a082806e1406b8395c439cb3d236c3d
