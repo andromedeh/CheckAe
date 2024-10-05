@@ -74,7 +74,8 @@ export const GoBackButton = styled.TouchableOpacity`
 
 export const TextValidation = styled.Text` 
 font-size: 14px;
-color: #FF8477;
+color: #EE1616;
 padding-left: 6px;
+font-weight: bold;
 margin-top: -30px;
 `;

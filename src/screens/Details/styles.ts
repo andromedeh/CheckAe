@@ -68,7 +68,7 @@ export const Text = styled.Text`
 `;
 
 export const TextStatus = styled.Text` 
-    padding-left: 25%;
+    padding-left: 22.5%;
     font-size: 14px;
     color: #000000;
 `;

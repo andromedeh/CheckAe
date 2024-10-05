@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { FlatList, StyleSheet, View, Text, Alert, StatusBar } from 'react-native';
+import { FlatList, StyleSheet, View, Text, Alert, StatusBar, Image } from 'react-native';
 import { Header } from '@/src/components/Header';
 import { Task } from '../../components/Task'
 import { Filter } from '../../components/Filter'
@@ -64,7 +64,14 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <CustomStatusBar />
-      <Header title="Task Manager" />
+      <View>
+        <Image
+          source={require('../../assets/images/header.png')}
+          style={styles.image}
+        />
+      </View>
+      <Header title="">
+      </Header>
       <SearchBar onChange={setSearchText} />
       <View style={styles.filtersContainer}>
         <Filter
@@ -166,5 +173,10 @@ const styles = StyleSheet.create({
   tasks: {
     flexDirection: 'column',
     width: '100%',
-  }
+  },
+
+  image: {
+    resizeMode: 'cover',
+    marginBottom: -40,
+  },
 });

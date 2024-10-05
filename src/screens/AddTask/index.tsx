@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Text, Alert, Pressable, Platform, StyleSheet } from 'react-native';
+import { Alert, Pressable, Platform } from 'react-native';
 import { RootStackParamList } from '@/src/utils/types';
 import { NativeStackScreenProps } from 'react-native-screens/lib/typescript/native-stack/types';
 import { useNavigation } from 'expo-router';
@@ -11,7 +11,6 @@ import { Feather } from '@expo/vector-icons';
 import DateTimePicker from "@react-native-community/datetimepicker";
 import { Formik } from 'formik';
 import * as Yup from 'yup';
-import { View } from 'react-native-reanimated/lib/typescript/Animated';
 
 type PropsNavigate = NativeStackScreenProps<RootStackParamList>;
 
@@ -25,28 +24,27 @@ export default function AddTask({ route }: any) {
   const TaskSchema = Yup.object().shape({
     nameValue: Yup.string()
       .min(4, "No mínimo 4 caracteres")
-      .max(16, "No máximo 16 caracteres")
-      .required("Tarefa não pode ser vazia"),
+      .max(30, "No máximo 30 caracteres")
+      .required("Nome é obrigatório!"),
     descriptionValue: Yup.string()
       .min(10, "No mínimo 10 caracteres")
       .max(100, "No máximo 100 caracteres")
-      .required("Descrição é obrigatória"),
+      .required("Descrição é obrigatória!"),
   });
 
   const toggleDatepicker = () => {
     setShowPicker(!showPicker);
   };
 
-  const onChange = ({ type }: any, selectedDate: any) => {
-    if (type == "set") {
-      const currentDate = selectedDate;
+  const onChange = (event: any, selectedDate: any) => {
+    if (selectedDate) {
+      const currentDate = selectedDate || date;
       setDate(currentDate);
+      setDateValue(formatDate(currentDate));
+
       if (Platform.OS === "android") {
-        toggleDatepicker();
-        setDateValue(formatDate(currentDate));
+        setShowPicker(false);
       }
-    } else {
-      toggleDatepicker();
     }
   };
 
@@ -77,9 +75,8 @@ export default function AddTask({ route }: any) {
       <Formik
         initialValues={{ nameValue: '', descriptionValue: '' }}
         validationSchema={TaskSchema}
-        onSubmit={(values, { resetForm }) => {
+        onSubmit={(values) => {
           handleAddTask(values.nameValue, values.descriptionValue);
-          resetForm();
         }}
       >
         {({ handleChange, handleSubmit, values, errors, touched }) => (
@@ -97,20 +94,28 @@ export default function AddTask({ route }: any) {
                   placeholderTextColor="gray"
                   onChangeText={handleChange('nameValue')}
                   value={values.nameValue}
-                  onBlur={() => console.log('Input perdeu o foco')}
                 />
               </InputContainer>
               {touched.nameValue && errors.nameValue && (
-                <TextValidation >{errors.nameValue}</TextValidation>
+                <TextValidation>{errors.nameValue}</TextValidation>
               )}
               <TitleInput>Data:</TitleInput>
               <InputContainer>
-                {showPicker && (
+                {Platform.OS === "android" && showPicker && (
                   <DateTimePicker
                     mode="date"
-                    display='spinner'
+                    display="spinner"
                     value={date}
                     onChange={onChange}
+                  />
+                )}
+                {Platform.OS === "ios" && showPicker && (
+                  <DateTimePicker
+                    mode="date"
+                    display="spinner"
+                    value={date}
+                    onChange={onChange}
+                    style={{ width: '100%' }}
                   />
                 )}
                 {!showPicker && (
@@ -125,7 +130,6 @@ export default function AddTask({ route }: any) {
                   </Pressable>
                 )}
               </InputContainer>
-
               <TitleInput>Descrição:</TitleInput>
               <DescriptionContainer>
                 <Input

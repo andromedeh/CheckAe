@@ -18,7 +18,7 @@ export default function Details({ route }: any, props: TaskProps) {
   const navigation = useNavigation<Props['navigation']>();
   const { tasks, setTasks } = useContext(TaskContext);
 
-  function DelTask(taskToDelete: TaskProps) {
+  function delTask(taskToDelete: TaskProps) {
     Alert.alert("Atenção!", `Tem certeza que deseja remover a tarefa ${taskToDelete.title} ?`,
       [
         {
@@ -34,7 +34,6 @@ export default function Details({ route }: any, props: TaskProps) {
       ]
     )
   }
-
   return (
     <Container>
       <ContainerInformacoes>
@@ -79,7 +78,7 @@ export default function Details({ route }: any, props: TaskProps) {
           </Text>
         </DescriptionContainer>
       </ContainerInformacoes>
-      <DeleteTaskButton onPress={() => DelTask(task)} />
+      <DeleteTaskButton onPress={() => delTask(task)} />
     </Container>
   );
 }
