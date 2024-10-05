@@ -41,7 +41,25 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 
 ## ⚙️ Como rodar o projeto
 
-Com os pré-requisitos instalados, basta clonar o repositório do Github em sua máquina, descompactar o arquivo e abrir a pasta no editor de código de sua preferência. Depois de instalar as dependências do projeto, o último passo é utilizar, no terminal do editor e na pasta do aplicativo, o comando npx expo start para dar início ao APP, selecionando a forma que deseja abrir o aplicativo (emulador, celular, etc).
+Com os pré-requisitos instalados, basta clonar o repositório do Github em sua máquina, descompactar o arquivo e abrir a pasta no editor de código de sua preferência. Ao abrir o projeto, para instalar as dependências pode-se utilizar o comando: yarn add expo ou npm install expo. Depois de instalar as dependências, o último passo é utilizar, no terminal do editor e na pasta do aplicativo, o comando npx expo start para dar início ao APP, selecionando a forma que deseja abrir o aplicativo (emulador, celular, etc). Caso falte alguma biblioteca, elas podem ser baixadas com os seguintes comandos:
+
+Styled-components:
+- yarn add styled-components
+- yarn add @types/styled-components-react-native -D
+
+Navigation:
+- yarn add @react-navigation/native
+- npx expo install react-native-screens react-native-safe-area-context
+
+AsyncStorage:
+- yarn add @react-native-async-storage/async-storage
+
+DateTimePicker:
+- npx expo install @react-native-community/datetimepicker
+
+Formik e Yup:
+- npm install formik --save
+- npm install yup
 
 ## 🔗 Links Úteis
 
@@ -58,7 +76,7 @@ Aqui estão alguns links que podem te ajudar durante a utilização e estudos:
 
 ## 🧑‍💻 Equipe
 
-- Ana Carolina Souza Sampaio
+- [Ana Carolina Souza Sampaio](https://github.com/ana13-carolina)
 - Andreina Novaes Silva Melo (eu 😄)
 - [Estêvão Viana Queiroz](https://github.com/Txtravos)
 - [João Vitor Cangussu Bernardes Oliveira](https://github.com/jvcangussu)
